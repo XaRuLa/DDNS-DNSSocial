@@ -6,7 +6,6 @@ def timee():
 	timenow = time.ctime()
 	return timenow
 
-
 oldip = ""
 while True:
  try:
@@ -16,7 +15,7 @@ while True:
    print " "
    time.sleep(59)
   else:
-   data = [('host', 'noname.in-malaysia.com'),('auth_token', 'Kaesr1zKctNfbZ5ERSia'),('ip', myip),]
+   data = [('host', 'your-domain-name-here'),('auth_token', 'your-token-here'),('ip', myip),]
    get_resp = requests.post('https://manage.dnssocial.com/myapi/v1/ddns', data=data)
    oldip = myip
    print timee()
